@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://x0temn2hki2m"]
+
+[ext_resource type="Texture2D" uid="uid://msrbtep5s24m" path="res://Art/Backgrounds/Act 1 Scene 4 - transition to Act 2.png" id="1_k8cdd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2l2os"]
+atlas = ExtResource("1_k8cdd")
+region = Rect2(0, 0, 1920, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lbrba"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2l2os")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_re1n0"]
+size = Vector2(1931, 1075.5)
+
+[node name="act_1_scene_3_transition" type="Node2D"]
+
+[node name="background" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lbrba")
+centered = false
+
+[node name="hot_spot" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hot_spot"]
+position = Vector2(960.5, 539.25)
+shape = SubResource("RectangleShape2D_re1n0")

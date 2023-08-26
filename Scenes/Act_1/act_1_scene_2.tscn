@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://duij6v7t1k1nf"]
+
+[ext_resource type="Texture2D" uid="uid://cq1fk0g5jrtc6" path="res://Art/Backgrounds/Act 1 Scene 2.png" id="1_q6w4q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4lab"]
+atlas = ExtResource("1_q6w4q")
+region = Rect2(0, 0, 1920, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_il03u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4lab")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="act_1_scene_2" type="Node2D"]
+
+[node name="background" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_il03u")
+centered = false
+
+[node name="walk_area" type="StaticBody2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="walk_area"]
+
+[node name="start_right" type="Marker2D" parent="."]

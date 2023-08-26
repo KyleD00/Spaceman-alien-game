@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://lb6ob86yu4wn"]
+
+[ext_resource type="Texture2D" uid="uid://bdbo8ekeyn0iq" path="res://Art/Backgrounds/Act 1 Scene 1.png" id="1_hgg3r"]
+[ext_resource type="PackedScene" uid="uid://dwmh3k7jv4lrj" path="res://Scenes/Characters/ship.tscn" id="2_4dgim"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_stj7a"]
+atlas = ExtResource("1_hgg3r")
+region = Rect2(0, 0, 1920, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_egwt8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_stj7a")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="act_1_scene_1" type="Node2D"]
+
+[node name="background" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_egwt8")
+centered = false
+
+[node name="start_point" type="Marker2D" parent="."]
+
+[node name="walk_area" type="StaticBody2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="walk_area"]
+
+[node name="ship" parent="." instance=ExtResource("2_4dgim")]
+position = Vector2(1072, 524)
+scale = Vector2(1.5, 1.5)

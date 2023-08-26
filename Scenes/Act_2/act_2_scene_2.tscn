@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://ds0un3nx2sug0"]
+
+[ext_resource type="Script" path="res://Scripts/act_2_scene_2.gd" id="1_cvipp"]
+[ext_resource type="Texture2D" uid="uid://bo21wqpmnjrkm" path="res://Art/Backgrounds/Act 2 Scene 2 - 1920 x 1080.png" id="2_mgiso"]
+[ext_resource type="PackedScene" uid="uid://c8l1x2el1vcrk" path="res://Scenes/Characters/spaceman.tscn" id="3_xqey8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2npx"]
+atlas = ExtResource("2_mgiso")
+region = Rect2(0, 0, 1920, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0k73s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2npx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="act_2_scene_2" type="Node2D"]
+script = ExtResource("1_cvipp")
+metadata/_edit_lock_ = true
+
+[node name="background" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0k73s")
+centered = false
+
+[node name="Start_left" type="Marker2D" parent="."]
+position = Vector2(67, 985)
+gizmo_extents = 239.7
+
+[node name="walk_area" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="walk_area"]
+position = Vector2(500, -310)
+build_mode = 1
+polygon = PackedVector2Array(-173, 1382, 337, 1386, 220, 1452, -559, 1461, -557, 953, 151, 953, 395, 1194, 421, 1372, 341, 1369, 243, 1364, 230, 1198, -1, 1110, -506, 1091, -488, 1333, -194, 1357)
+
+[node name="Spaceman" parent="." instance=ExtResource("3_xqey8")]
+position = Vector2(684, 1044)

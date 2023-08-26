@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8l1x2el1vcrk"]
+
+[ext_resource type="Texture2D" uid="uid://diia406nbspfg" path="res://Art/Characters/Spaceman pixel png.png" id="1_altqh"]
+[ext_resource type="Script" path="res://Scripts/spaceman.gd" id="1_qmij3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uwbex"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_altqh")
+}],
+"loop": false,
+"name": &"walk",
+"speed": 0.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_surhk"]
+radius = 18.0
+height = 94.0
+
+[node name="Spaceman" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+motion_mode = 1
+slide_on_ceiling = false
+floor_stop_on_slope = false
+floor_block_on_wall = false
+script = ExtResource("1_qmij3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-49, -51.5)
+sprite_frames = SubResource("SpriteFrames_uwbex")
+animation = &"walk"
+centered = false
+offset = Vector2(0, -35)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.360784)
+position = Vector2(-1, -35.5)
+shape = SubResource("CapsuleShape2D_surhk")
