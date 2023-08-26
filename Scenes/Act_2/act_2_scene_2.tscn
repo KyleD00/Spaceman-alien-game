@@ -34,7 +34,7 @@ gizmo_extents = 239.7
 [node name="walk_area" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="walk_area"]
-position = Vector2(500, -310)
+position = Vector2(501, -310)
 build_mode = 1
 polygon = PackedVector2Array(-173, 1382, 337, 1386, 220, 1452, -559, 1461, -557, 953, 151, 953, 395, 1194, 421, 1372, 341, 1369, 243, 1364, 230, 1198, -1, 1110, -506, 1091, -488, 1333, -194, 1357)
 

@@ -1,0 +1,39 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1693059548
+icon.svg::CompressedTexture2D::998897362278406462::1693059439::1693059550::1::::<><>::
+::res://Art/::1693059439
+::res://Art/Backgrounds/::1693059439
+Act 1 Scene 1.png::CompressedTexture2D::2599960787214648684::1693059439::1693059550::1::::<><>::
+Act 1 Scene 2.png::CompressedTexture2D::5949859453831515783::1693059439::1693059550::1::::<><>::
+Act 1 Scene 4 - transition to Act 2.png::CompressedTexture2D::880459902745630882::1693059439::1693059550::1::::<><>::
+Act 2 Scene 2 - 1920 x 1080.png::CompressedTexture2D::3426421487371643900::1693059439::1693059550::1::::<><>::
+::res://Art/Characters/::1693059439
+Spaceman1 pixel.png::CompressedTexture2D::7231339532004467951::1693059439::1693059550::1::::<><>::
+Spaceman pixel png.png::CompressedTexture2D::7737340971804694764::1693059439::1693059550::1::::<><>::
+::res://Art/Characters/ship/::1693059439
+Ship left 1.png::CompressedTexture2D::3706706186752842196::1693059439::1693059550::1::::<><>::
+Ship left 2.png::CompressedTexture2D::9047459141035063278::1693059439::1693059550::1::::<><>::
+Ship left 3.png::CompressedTexture2D::1277680341161131544::1693059439::1693059550::1::::<><>::
+Ship left 4.png::CompressedTexture2D::8398921081671447708::1693059439::1693059550::1::::<><>::
+Ship left 5.png::CompressedTexture2D::8329083316989021361::1693059439::1693059550::1::::<><>::
+Ship left 6.png::CompressedTexture2D::8142626895233854015::1693059439::1693059550::1::::<><>::
+Ship right 1.png::CompressedTexture2D::688141981303381023::1693059439::1693059550::1::::<><>::
+Ship right 2.png::CompressedTexture2D::1178819988516750697::1693059439::1693059550::1::::<><>::
+Ship right 3.png::CompressedTexture2D::3006143145467543633::1693059439::1693059550::1::::<><>::
+Ship right 4.png::CompressedTexture2D::5618357515466694239::1693059439::1693059550::1::::<><>::
+Ship right 5.png::CompressedTexture2D::1748511612336748770::1693059439::1693059550::1::::<><>::
+Ship right 6.png::CompressedTexture2D::3239932384493147491::1693059439::1693059550::1::::<><>::
+::res://Scenes/::1693059439
+::res://Scenes/Act_1/::1693059439
+act_1_scene_1.tscn::PackedScene::776048990606131373::1693059439::0::1::::<><>::uid://bdbo8ekeyn0iq::::res://Art/Backgrounds/Act 1 Scene 1.png<>uid://dwmh3k7jv4lrj::::res://Scenes/Characters/ship.tscn
+act_1_scene_2.tscn::PackedScene::8580156911740914679::1693059439::0::1::::<><>::uid://cq1fk0g5jrtc6::::res://Art/Backgrounds/Act 1 Scene 2.png
+act_1_scene_3_transition.tscn::PackedScene::1667114265163594786::1693059439::0::1::::<><>::uid://msrbtep5s24m::::res://Art/Backgrounds/Act 1 Scene 4 - transition to Act 2.png
+::res://Scenes/Act_2/::1693059439
+act_2_scene_2.tscn::PackedScene::8475509727409561493::1693059439::0::1::::<><>::res://Scripts/act_2_scene_2.gd<>uid://bo21wqpmnjrkm::::res://Art/Backgrounds/Act 2 Scene 2 - 1920 x 1080.png<>uid://c8l1x2el1vcrk::::res://Scenes/Characters/spaceman.tscn
+::res://Scenes/Characters/::1693059439
+ship.tscn::PackedScene::8728664740448813007::1693059439::0::1::::<><>::res://Scripts/spaceShip.gd<>uid://bs2s56gw2guv1::::res://Art/Characters/ship/Ship left 1.png<>uid://d15wlhyjrxj0q::::res://Art/Characters/ship/Ship left 2.png<>uid://sg6hdc0rvgmq::::res://Art/Characters/ship/Ship left 3.png<>uid://drwradur5pyu3::::res://Art/Characters/ship/Ship left 4.png<>uid://dqww1x34pgi7r::::res://Art/Characters/ship/Ship left 5.png<>uid://doal404ix3t8b::::res://Art/Characters/ship/Ship left 6.png<>uid://j2lulfukaa68::::res://Art/Characters/ship/Ship right 1.png<>uid://q2a805hc4jc0::::res://Art/Characters/ship/Ship right 2.png<>uid://bi3g0dugkeop2::::res://Art/Characters/ship/Ship right 3.png<>uid://cmbtr6yai6ylr::::res://Art/Characters/ship/Ship right 4.png<>uid://y58y32e6md3o::::res://Art/Characters/ship/Ship right 5.png<>uid://bmfphiiil3gut::::res://Art/Characters/ship/Ship right 6.png
+spaceman.tscn::PackedScene::7113402502652703228::1693059439::0::1::::<><>::uid://diia406nbspfg::::res://Art/Characters/Spaceman pixel png.png<>res://Scripts/spaceman.gd
+::res://Scripts/::1693059439
+act_2_scene_2.gd::GDScript::-1::1693059439::0::1::::<>Node2D<>::
+spaceman.gd::GDScript::-1::1693059439::0::1::::spaceman<>CharacterBody2D<>::
+spaceShip.gd::GDScript::-1::1693059439::0::1::::ship<>CharacterBody2D<>::
